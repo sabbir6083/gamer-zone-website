@@ -210,10 +210,19 @@ margin-bottom: 12px;
 
 /* card Section style */
 
+
 .card-section{
     margin-top: 100px;
     
 }
+
+.section-heading{
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    }
+
 .card-wraper{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -222,13 +231,17 @@ margin-bottom: 12px;
 
 .card-img{
     width: 100%;
+    
 }
+
 
 .card-heading-wraper{
     text-align: center;
     margin: auto;
     margin-bottom: 50px;
+    
 }
+
 
 .card-heading{
 color: #0B0223;
@@ -247,20 +260,44 @@ font-weight: 700;
 
 }
 
-.section-heading{
-color: #534C64;
-font-size: 18px;
-font-weight: 400;
-line-height: 30px;
+.card-description {
+    margin-top: 1rem;
 }
 
 
+.card{
+position: relative;
+overflow: hidden;
+}
 
+.overlay{
+ text-align: center;
+ color: #fff;
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.8);
+ opacity: 0;
+ transition: opacity 0.3s ease-in-out;
+}
 
+.overlay-content{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 50%;
+}
 
-
-
-
+.overlay-content > h5 {
+    color:#FF42A5;
+    font-size: 20px;
+}
+.overlay:hover {
+    opacity: 1;
+    border: 2px solid rgb(230, 8, 82);
+  }
 
 
 /* Mobile responsive css */
@@ -282,7 +319,7 @@ line-height: 30px;
         flex-direction: column;
     }
 
-    .menu{
+    .menu, .card-wraper{
         display: grid;
         grid-template-columns: 1fr;
         align-items: center;
@@ -298,7 +335,7 @@ line-height: 30px;
     
     .banner-section{
         background-size: 90%;
-        height: 300px;
+        
     }
     
     .banner-text-side{
@@ -315,7 +352,16 @@ line-height: 30px;
         width: 80%;
         margin: auto;
     }
-
+    
+    .card-img{
+        width: 90%;
+          
+    }
+    
+    .card{
+        justify-content: center;
+        align-items: center;
+    }
 
 }
 
@@ -349,7 +395,7 @@ line-height: 30px;
     
     .banner-section{
         background-size: 90%;
-        height: 300px;
+        
     }
     
     .banner-text-side{
@@ -368,6 +414,9 @@ line-height: 30px;
         margin: auto;
     }
 
+    .card-wraper{
+        grid-template-columns: repeat(2, 1fr);
+    }
   
 }
 
