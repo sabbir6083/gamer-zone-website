@@ -536,6 +536,11 @@ footer{
         bottom: 100px;
         left: -60px;
       }
+
+      .grid-btns-wraper{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 3fr);
+      }
 }
 
 /* Tablet responsive css */
