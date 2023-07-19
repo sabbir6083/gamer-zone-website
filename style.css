@@ -121,8 +121,56 @@ line-height: normal;
 
 /* Mobile responsive css */
 
+@media screen and (max-width:576px) {
+    nav{
+        flex-direction: column;
+        
+    }
+
+    .logo-side{
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+        
+    .menu-side{
+        flex-direction: column;
+    }
+
+    .menu{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .menu > li{
+        margin-bottom: 1.8rem;
+    }
+    
 
 
+}
 
+
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    nav{
+        flex-direction: column;
+    }
+
+    .menu-side{
+        flex-direction: column;
+
+    }
+ 
+    .logo-side{
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    
+    .menu > li{
+        margin-bottom: 2rem;
+    }
+}
 
 /* Tablet responsive css */
