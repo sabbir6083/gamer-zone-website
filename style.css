@@ -277,7 +277,7 @@ overflow: hidden;
  top: 0;
  left: 0;
  width: 100%;
- height: 100%;
+ height: 85%;
  background-color: rgba(0, 0, 0, 0.8);
  opacity: 0;
  transition: opacity 0.3s ease-in-out;
@@ -374,46 +374,29 @@ line-height: 30px;
     margin-top: 20px;
 }
 
+.games-items-wraper{
+    display: flex;
+    flex-wrap: wrap;
+}
 
-.grid-btns-wraper{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 5px;
+.button-div {
+    padding: 15px 15px;
+}
+
+.games-items-anckhor {
+    display: flex;
+    align-items: center;
+}
+
+.games-img{
     
 }
-.grid-btns{}
-
-.custon-btn{
-display: flex;
-width: 150px;
-justify-content: space-evenly;
-align-items: center;
-width: 200px;
-border-radius: 8px;
-border: none;
-}
-
-.custon-btn:hover{
-    background: #FFF;
-}
-
-.custon-btn > a{
-    color: #000000;
-}
-
-.fotter-logo{
-    max-width: 250px;
-    margin: auto;
-}
-
-.secound-row{
-    max-width: 70%;
-    margin: auto;
-    margin-top: 20px;
-}
-
-li.footer-class {
-    margin-right: 34px;
+span.games-btn-text {
+    margin-left: 1rem;
+    color: #0B0223;
+    font-size: 15px;
+    font-weight: 600;
+    
 }
 
 /* footer section */
@@ -453,6 +436,12 @@ footer{
     font-weight: 400;
 }
 
+
+
+
+
+
+
 /* Mobile responsive css */
 
 @media screen and (max-width:576px) {
@@ -474,6 +463,8 @@ footer{
         display: grid;
         grid-template-columns: 1fr;
         align-items: center;
+        align-items: center;
+        text-align: center;
     }
 
     .menu > li{
@@ -499,6 +490,20 @@ footer{
         background-position: center;
     }
     
+    .play-text-heading {
+        line-height: 50px;
+    }
+
+    .last-word{
+
+    }
+    .primary-bt{
+        padding: 21px 20px;
+    }
+    .secounday-btn {
+        
+        padding: 21px 20px;
+    }
     .banner-img-side{
         width: 80%;
         margin: auto;
@@ -508,11 +513,16 @@ footer{
         width: 90%;
           
     }
-
+    
+    .overlay{
+        height: 90%;
+        width: 100%;
+    }
 
     .play-instant-wraper{
         flex-direction: column;
         margin-top: 30px;
+        
     }
    
     .play-text-side {
@@ -549,10 +559,7 @@ footer{
         left: -60px;
       }
 
-      .grid-btns-wraper{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 3fr);
-      }
+
 }
 
 /* Tablet responsive css */
@@ -639,6 +646,12 @@ footer{
         margin-left: 86px;
         margin: auto;
       }
+
+      .overlay{
+        height: 90%;
+        width: 100%;
+    }
+ 
 
 }
 
