@@ -372,9 +372,10 @@ line-height: 30px;
 /*button grid */
 
 .games-item {
-    padding: 60px 20px;
+    padding: 60px 30px;
     background: #ddd;
     margin-top: 20px;
+    width: 100%;
 }
 
 .games-items-wraper{
@@ -419,7 +420,7 @@ span.games-btn-text {
 
 footer{
     background: #0B0223;
-    padding: 30px 22px;
+    padding: 30px 30px;
     width: 100%;
 }
 .footer-wraper{
