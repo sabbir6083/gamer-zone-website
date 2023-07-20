@@ -419,7 +419,8 @@ span.games-btn-text {
 
 footer{
     background: #0B0223;
-    padding: 30px 10px;
+    padding: 30px 22px;
+    width: 100%;
 }
 .footer-wraper{
     max-width:100%;
@@ -612,6 +613,10 @@ font-weight: 500;
         right: 0px;
         
       }
+
+      .games-item {
+        width: 100%;
+      }
       
       .games-items-wraper{
         display: grid;
@@ -625,7 +630,8 @@ font-weight: 500;
         border-radius: 35px;
         
       } 
-      
+
+  
       .footer-ul{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
