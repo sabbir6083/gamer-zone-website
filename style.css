@@ -741,11 +741,11 @@ font-weight: 500;
     }
      
     .bottom-img {
-        top: 250px;
+        top: 300px;
         right: 0px;
         
       }
-      
+
     .games-items-wraper{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
